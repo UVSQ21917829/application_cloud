@@ -1,0 +1,99 @@
+<!Doctype html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     
+     <title>image</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+              input[type=text], select {
+                width: 50%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #fff;
+                border-radius: 4px;
+                box-sizing: border-box;
+                text-decoration-color: #fff;
+              }
+
+              input[type=submit] {
+                width: 50%;
+                background-color: #72264C;
+                color: white;
+                padding: 14px 20px;
+                left: 40px ;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                alignment-baseline: : center;
+              }
+              
+              input[type=submit]:hover {
+                background-color: #72264C ;
+              }
+              
+              div {
+                border-radius: 10px;
+                background-color: #6D4F5E;
+                padding: 10px;
+              }
+              h4{
+                color: #fff;
+              }
+              form{
+                align-items: center;
+              }
+        
+              </style>
+              <body>
+
+
+
+
+
+</head>
+<body>
+
+	
+ <div class="container2">
+
+ <form method="POST" action="generatimage.php">
+     <header class="heading"> <center> <h1>Projet Cloud</h1> <br> <h2> <h1>Création de l'image Docker</h1></h2></center> </header><hr></hr>
+
+    <div class="row ">
+     
+         <center>
+          <div>
+                 
+                          <label><h4>Veuillez saisir le lien github de l'application et le nom de l'image:</h4></label>
+                  
+                         <input type="text" name="lien"   placeholder="Lien github de l'application pour récuper l'image" required>
+                 </div>
+          </center>
+         <center>
+          <div>
+                 
+                  
+                         <input type="text" name="name" placeholder="Nom de l'image" required>
+           
+          </div>
+             </center>
+             <center>
+           <div >
+                        <input type="submit" name="envoyer" value="Générer l'image" />
+                 
+           </div>
+           </center>
+         
+     </div>  
+    
+</form>
+
+                 
+         
+</div>
+
+</body>     
+</html>
